@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "e-commerce-api/1.0.0": {
+        "dependencies": {
+          "e-commerce-api.contracts": "1.0.0"
+        },
+        "runtime": {
+          "e-commerce-api.dll": {}
+        }
+      },
+      "e-commerce-api.contracts/1.0.0": {
+        "runtime": {
+          "e-commerce-api.contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "e-commerce-api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "e-commerce-api.contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

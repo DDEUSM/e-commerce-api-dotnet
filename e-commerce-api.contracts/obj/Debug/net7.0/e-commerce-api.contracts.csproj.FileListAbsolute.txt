@@ -1,0 +1,11 @@
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\bin\Debug\net7.0\e-commerce-api.contracts.deps.json
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\bin\Debug\net7.0\e-commerce-api.contracts.dll
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\bin\Debug\net7.0\e-commerce-api.contracts.pdb
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\e-commerce-api.contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\e-commerce-api.contracts.AssemblyInfoInputs.cache
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\e-commerce-api.contracts.AssemblyInfo.cs
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\e-commerce-api.contracts.csproj.CoreCompileInputs.cache
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\e-commerce-api.contracts.dll
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\refint\e-commerce-api.contracts.dll
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\e-commerce-api.contracts.pdb
+C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\obj\Debug\net7.0\ref\e-commerce-api.contracts.dll
