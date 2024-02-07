@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api\\e-commerce-api.csproj": {}
+    "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/e-commerce-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\e-commerce-api.contracts.csproj": {
+    "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/e-commerce-api.contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\e-commerce-api.contracts.csproj",
+        "projectUniqueName": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/e-commerce-api.contracts.csproj",
         "projectName": "e-commerce-api.contracts",
-        "projectPath": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\e-commerce-api.contracts.csproj",
-        "packagesPath": "C:\\Users\\valdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\obj\\",
+        "projectPath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/e-commerce-api.contracts.csproj",
+        "packagesPath": "/home/dedeus/.nuget/packages/",
+        "outputPath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/dedeus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,36 +53,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api\\e-commerce-api.csproj": {
+    "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/e-commerce-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api\\e-commerce-api.csproj",
+        "projectUniqueName": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/e-commerce-api.csproj",
         "projectName": "e-commerce-api",
-        "projectPath": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api\\e-commerce-api.csproj",
-        "packagesPath": "C:\\Users\\valdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api\\obj\\",
+        "projectPath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/e-commerce-api.csproj",
+        "packagesPath": "/home/dedeus/.nuget/packages/",
+        "outputPath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/dedeus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\e-commerce-api.contracts.csproj": {
-                "projectPath": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\e-commerce-api.contracts.csproj"
+              "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/e-commerce-api.contracts.csproj": {
+                "projectPath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/e-commerce-api.contracts.csproj"
               }
             }
           }
@@ -117,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
         }
       }
     }

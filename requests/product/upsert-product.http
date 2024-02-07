@@ -1,0 +1,38 @@
+@id=1dd8c4d4-3308-4be2-9257-de20b3de7daf
+PUT http://localhost:5285/products/{{id}}
+Content-Type: application/json
+
+{
+    "brand_id": "3434343-4ffgfgf-343ffgfg-343fgfg",
+    "model": "new TV sm2000 4k 2024",
+    "category_id": "3434343-4ffgfgf-343ffgfg-343fgfg",
+    "color": "#123456",
+    "property_infos": {
+        "resolution": {
+            "unit": "pixels",
+            "value": [3840, 2160]
+        },
+        "length": {
+            "unit": "centimeters",
+            "value": 100.50
+        },
+        "height": {
+            "unit": "centimeters",
+            "value": 70.40
+        }, 
+        "inch": 42,
+        "weight": {
+            "unit": "kilograms",
+            "value": 6.56
+        }
+    },
+    "price_infos": {
+        "currency": "brl",
+        "value": 2400
+    },
+    "payment_infos": {
+        "max_installments": 10,
+        "payment_methods": ["debit", "credit", "ticket"]
+    },
+    "in_stock": 14
+}

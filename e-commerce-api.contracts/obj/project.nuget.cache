@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQhYX2VPp2lE+6gSkwWgaUhAWFyNglw9QEtqJHCC5/3V63w5l95zn0RWZidld7lpw5f7ARbRLsd4HXkMrsyq5A==",
+  "dgSpecHash": "WtfjvoNekGr7jb+d9M85hw9jgldzqexO1TiLTQq91EPFoNNnZGV5EfBuTqvlftL5hCBaKGwJEaOfhJZWTohcYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\valdi\\Documents\\meus-projetos-dotnet\\e-commerce\\e-commerce-api.contracts\\e-commerce-api.contracts.csproj",
+  "projectFilePath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/e-commerce-api.contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

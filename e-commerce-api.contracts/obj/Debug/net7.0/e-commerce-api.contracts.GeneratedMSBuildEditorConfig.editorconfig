@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = e_commerce_api.contracts
-build_property.ProjectDir = C:\Users\valdi\Documents\meus-projetos-dotnet\e-commerce\e-commerce-api.contracts\
+build_property.ProjectDir = /home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api.contracts/

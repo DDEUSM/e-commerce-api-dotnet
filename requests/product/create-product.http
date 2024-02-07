@@ -2,12 +2,11 @@ POST http://localhost:5285/products
 Content-Type: application/json
 
 {
-    "id": '3434343-4ffgfgf-343ffgfg-343fgfg', 
-    "brand_id": '3434343-4ffgfgf-343ffgfg-343fgfg',
+    "brandId": "1dd8c4d4-3308-4be2-9257-de20b3de7d1f",
     "model": "TV sm2000 4k",
-    "category_id": '3434343-4ffgfgf-343ffgfg-343fgfg',
+    "categoryId": "1dd8c4d4-3308-4be2-9257-de20b3d19daf",
     "color": "#123456",
-    "properties": {
+    "propertyInfos": {
         "resolution": {
             "unit": "pixels",
             "value": [3840, 2160]
@@ -26,13 +25,62 @@ Content-Type: application/json
             "value": 6.56
         }
     },
-    "price": {
+    "priceInfos": {
         "currency": "brl",
         "value": 2400
     },
-    "payments": {
+    "paymentInfos": {
         "max_installments": 10,
         "payment_methods": ["debit", "credit", "ticket"]
     },
-    "in_stock": 14
+    "inStock": 14
 }
+
+###
+
+
+GET http://localhost:5285/products/5bad6518-5c73-4a5b-bec0-fe6612989a82
+
+###
+
+PUT http://localhost:5285/products/5bad6518-5c73-4a5b-bec0-fe6612989a82
+Content-Type: application/json
+
+{
+    "brandId": "1dd8c4d4-3308-4be2-9257-de20b3de7d1f",
+    "model": "TV sm2000 4k",
+    "categoryId": "1dd8c4d4-3308-4be2-9257-de20b3d19daf",
+    "color": "#123456",
+    "propertyInfos": {
+        "resolution": {
+            "unit": "pixels",
+            "value": [3840, 2160]
+        },
+        "length": {
+            "unit": "centimeters",
+            "value": 100.50
+        },
+        "height": {
+            "unit": "centimeters",
+            "value": 70.40
+        }, 
+        "inch": 42,
+        "weight": {
+            "unit": "kilograms",
+            "value": 6.56
+        }
+    },
+    "priceInfos": {
+        "currency": "brl",
+        "value": 2400
+    },
+    "paymentInfos": {
+        "max_installments": 10,
+        "payment_methods": ["debit", "credit", "ticket"]
+    },
+    "inStock": 14
+}
+
+###
+
+DELETE http://localhost:5285/products/5bad6518-5c73-4a5b-bec0-fe6612989a82
