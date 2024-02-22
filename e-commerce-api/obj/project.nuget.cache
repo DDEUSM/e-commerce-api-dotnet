@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cmQ+cbN7XUvv79d0lBC+13rJclM4TH5xKDZevGyPNz9251GcX75MzC2U1SKZeCuhqNabaetzeB4SDxWZ4wXmfA==",
+  "dgSpecHash": "J5uFF53S7papX7xOdwksQPczSqHk7pJD1Lo6BMQUu9y4bkHyFoWtk4VPKDKjpR6PoTjyxyPQCmzn68orRFXL6g==",
   "success": true,
   "projectFilePath": "/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/e-commerce-api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/dedeus/.nuget/packages/erroror/1.10.0/erroror.1.10.0.nupkg.sha512"
+  ],
   "logs": []
 }

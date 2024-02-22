@@ -56,3 +56,4 @@ C:/Users/valdi/Documents/meus-projetos-dotnet/e-commerce/e-commerce-api/obj/Debu
 /home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/obj/Debug/net7.0/e-commerce-api.pdb
 /home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/obj/Debug/net7.0/e-commerce-api.genruntimeconfig.cache
 /home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/obj/Debug/net7.0/ref/e-commerce-api.dll
+/home/dedeus/documents/dotnet-projects/web-projects/e-commerce-api-dotnet/e-commerce-api/bin/Debug/net7.0/ErrorOr.dll

@@ -30,8 +30,8 @@ Content-Type: application/json
         "value": 2400
     },
     "paymentInfos": {
-        "max_installments": 10,
-        "payment_methods": ["debit", "credit", "ticket"]
+        "maxInstallments": 10,
+        "paymentMethods": ["debit", "credit", "ticket"]
     },
     "inStock": 14
 }
@@ -39,11 +39,11 @@ Content-Type: application/json
 ###
 
 
-GET http://localhost:5285/products/5bad6518-5c73-4a5b-bec0-fe6612989a82
+GET http://localhost:5285/products/eba4210e-8caa-46d9-a4cd-9a8709ec7ddf
 
 ###
 
-PUT http://localhost:5285/products/5bad6518-5c73-4a5b-bec0-fe6612989a82
+PUT http://localhost:5285/products/e5356b11-0aed-4286-a0fd-3583cffaab15
 Content-Type: application/json
 
 {
@@ -75,12 +75,12 @@ Content-Type: application/json
         "value": 2400
     },
     "paymentInfos": {
-        "max_installments": 10,
-        "payment_methods": ["debit", "credit", "ticket"]
+        "maxInstallments": 10,
+        "paymentMethods": ["debit", "credit", "ticket"]
     },
     "inStock": 14
 }
 
 ###
 
-DELETE http://localhost:5285/products/5bad6518-5c73-4a5b-bec0-fe6612989a82
+DELETE http://localhost:5285/products/e5356b11-0aed-4286-a0fd-3583cffaab15

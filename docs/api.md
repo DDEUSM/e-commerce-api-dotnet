@@ -50,3 +50,8 @@ POST /products
 ```sh
 201
 ```
+## Business Rules
+
+- The stock count should not be a negative number;
+- The price of product should not be a negative value;
+- The max number of installments should be less or equal 15.

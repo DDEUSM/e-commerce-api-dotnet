@@ -6,9 +6,9 @@ public record CreateProductResponse (
     string model,
     Guid categoryId,
     string color,
-    Object propertyInfos,
-    Object priceInfos,
-    Object paymentInfos,
+    dynamic propertyInfos,
+    dynamic priceInfos,
+    dynamic paymentInfos,
     int inStock
 );
 

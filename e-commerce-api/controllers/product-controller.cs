@@ -1,8 +1,14 @@
+using System.Runtime.CompilerServices;
+using System.Text.Json;
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
+using e_commerce_api.use_cases;
+
+using e_commerce_api.models;
 
 [ApiController]
 [Route("products")]
-public class ProductsController : ControllerBase
+public class ProductsController : ApiController
 {
     private readonly IProductUseCases productUseCases;
     public ProductsController(IProductUseCases productUseCases)
@@ -12,64 +18,63 @@ public class ProductsController : ControllerBase
 
     [HttpPost()]
     public IActionResult CreateProduct(CreateProductRequest request)
-    {
-        Product newProduct = new Product (
+    {    
+        PriceInfos? priceInfos = JsonSerializer.Deserialize<PriceInfos>(request.priceInfos);
+        PaymentInfos? paymentInfos = JsonSerializer.Deserialize<PaymentInfos>(request.paymentInfos);
+
+        ErrorOr<Product> tryToCreateProduct = Product.Create (
             Guid.NewGuid(),
-            Guid.NewGuid(),
-            "sm2000 tv 4k",
-            Guid.NewGuid(),
-            "#353545",
-            new {
-                resolution = new int[]{3840, 2160},
-                height = new {
-                    unit = "centimerters",
-                    value = 70 
-                },
-                length = new {
-                    unit = "centimeters",
-                    value = 110
-                },
-                width = new {
-                    unit = "centimeters",
-                    value = 2
-                }
-            },
-            new {
-                currency = "usd",
-                value = 2450
-            },
-            new {
-                maxInstallments = 10,
-                payment_methods = new string[]{"debit", "credit", "ticket"}
-            },
-            10
+            request.brandId,
+            request.model,
+            request.categoryId,
+            request.color,
+            request.propertyInfos,
+            priceInfos,
+            paymentInfos,
+            request.inStock
         );
 
-        this.productUseCases.createProduct(newProduct);
-        var response = new CreateProductResponse (
-            Guid.NewGuid(),
-            newProduct.BrandId,
-            newProduct.Model,
-            newProduct.CategoryId,
-            newProduct.Color,
-            newProduct.PropertyInfos,
-            newProduct.PriceInfos,
-            newProduct.PaymentInfos,
-            newProduct.InStock
+        Console.WriteLine(tryToCreateProduct.Value);
+
+        Product newProduct = tryToCreateProduct.Value;
+
+        ErrorOr<Created> createProductResult = this.productUseCases.createProduct(newProduct);
+
+        return createProductResult.Match(
+            created => CreatedAtAction(
+                nameof(GetProduct),
+                new { id = newProduct.Id },
+                value: MapProduct(newProduct)
+            ),
+            errors => Problem(errors)
         );
-        return CreatedAtAction(
-            nameof(GetProduct),
-            new { id = newProduct.Id },
-            response
-        );
-    }
+    }    
 
 
     [HttpGet("{id:guid}")]
     public IActionResult GetProduct(Guid id)
     {
-        Product product = this.productUseCases.getProductById(id);
-        var response = new CreateProductResponse(
+        ErrorOr<Product> getProductResult = this.productUseCases.getProductById(id);
+        return getProductResult.Match(
+            product => Ok(MapProduct(product)),
+            errors => Problem(errors)
+        );
+        /*
+        if (getProductResult.IsError && getProductResult.FirstError == Errors.Product.NotFound)
+        {
+            return NotFound();
+        }
+        var product = getProductResult.Value;
+
+        var response = MapProduct(product); 
+       
+        return Ok(response);
+        */
+    }
+
+    private static CreateProductResponse MapProduct(Product product)
+    {
+        return new CreateProductResponse(
             product.Id,
             product.BrandId,
             product.Model,
@@ -80,33 +85,44 @@ public class ProductsController : ControllerBase
             product.PaymentInfos,
             product.InStock
         );
-        return Ok(response);
     }
-
 
     [HttpPut("{id:guid}")]
     public IActionResult UpsertProduct(Guid id, UpsertProductRequest request)
     {
-        var product = new Product(
+        PriceInfos? priceInfos = JsonSerializer.Deserialize<PriceInfos>(request.priceInfos);
+        PaymentInfos? paymentInfos = JsonSerializer.Deserialize<PaymentInfos>(request.paymentInfos);
+        ErrorOr<Product> tryToCreateProduct = Product.Create (
             id,
             request.brandId,
             request.model,
             request.categoryId,
             request.color,
             request.propertyInfos,
-            request.priceInfos,
-            request.paymentInfos,
+            priceInfos,
+            paymentInfos,
             request.inStock
+        );  
+
+        Product product = tryToCreateProduct.Value;
+
+        ErrorOr<Updated> upsertProductResult = this.productUseCases.upsertProduct(id, product);
+
+        return upsertProductResult.Match(
+            updated => NoContent(),
+            errors => Problem(errors)
         );        
-        this.productUseCases.upsertProduct(id, product);
-        return NoContent();
     }
 
 
     [HttpDelete("{id:guid}")]
     public IActionResult DeleteProduct(Guid id)
     {
-        this.productUseCases.deleteProduct(id);
-        return NoContent();
+        ErrorOr<Deleted> deleteProductResult = this.productUseCases.deleteProduct(id);
+
+        return deleteProductResult.Match(
+            deleted => NoContent(),
+            errors => Problem(errors)
+        );
     }
 }
